@@ -20,8 +20,8 @@ jobs:
       - name: treehouses php
         run: |
           export DOCKER_CLI_EXPERIMENTAL=enabled
-          repo="dyeh123/php"
-          base="dyeh123/alpine"
+          repo="treehouses/php"
+          base="treehouses/alpine"
           source .github/workflows/utils.sh
           echo "amd64"
           baseamd64=$(get_variant_sha "$base" "latest" "amd64")
